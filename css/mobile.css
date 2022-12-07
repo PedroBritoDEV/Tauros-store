@@ -1,0 +1,52 @@
+@media (max-width: 830px){
+  header .header-content .logo{
+    width: 160px;
+    height: 50px;
+  }
+  header .header-content .user .account i {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+  }
+  header .header-content .user .account p {
+    display: none;
+  }
+  header .header-content .user .carrinho{
+    font-size: 1em;
+  }
+
+  main {
+    display: grid;
+    grid-template-areas: 
+    "categories "
+    "slider" 
+    "products" 
+    ;
+  }
+  .categories {
+    max-width: 97vw;
+    height: 80px;
+    align-items: center;
+    padding: 0 5px;
+    margin: 10px auto;
+    margin-bottom: 0;
+  }
+  .categories ul {
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x: auto;
+    height: 100%;
+  }
+  .categories ul::-webkit-scrollbar {
+    display: none;
+  }
+  .categories ul li {
+    width: 200px;
+    margin-right: 10px;
+  }
+  main .slider {
+    width: 97vw;
+    height: 200px;
+    margin: 10px auto;
+  } 
+}

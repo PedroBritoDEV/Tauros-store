@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Quicksand', sans-serif; */
+:root{
+  --cor-do-site: rgb(208, 120, 255);
+}
+html {
+  overflow-x: hidden;
+}
+*{
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif
+}
+body {
+  background-color: rgb(197, 197, 197);
+  max-width: 100vw;
+}
+i {
+  color: var(--cor-do-site);
+  margin-right: 5px;
+}
+.header_banner {
+  background-color: rgb(28, 25, 25);
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header_banner p {
+  color: var(--cor-do-site);
+  font-size: 1.3em;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  max-width: 1200px;
+  width: 100%;
+}
+header .header-content .logo{
+  width: 250px;
+  height: 70px;
+}
+header .header-content .user {
+  display: flex;
+  align-items: center;
+  
+}
+header .header-content .user .account {
+  height: 50%;
+  display: flex;
+  background-color: rgb(231, 231, 231);
+  padding: 20px;
+  align-items: center;
+  border-radius: 40px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+header .header-content .user .account p {
+  margin: 0px 5px 0px 10px;
+  font-weight: 400;
+  color: rgb(60, 60, 60);
+
+}
+header .header-content .user .carrinho{
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 27.5px;
+  border-radius: 50%;
+  background-color: var(--cor-do-site);
+}
+header .header-content .user .carrinho i {
+  color: black;
+}
+.categories {
+  background-color: white;
+  width: auto;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  grid-area: categories;
+}
+.categories ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  list-style: none;
+  color: rgb(52, 52, 52);
+}
+.categories ul li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.categories ul li p{
+ margin-left: 5px;
+ color: rgb(60, 60, 60);
+}
+main {
+  display: grid;
+  grid-template-areas: 
+  "categories slider slider"
+  "products products products" 
+  "products products products" 
+  ;
+}
+
+main .slider {
+  width: 75vw;
+  height: 350px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: var(--cor-do-site);
+  grid-area: slider;
+}
+main .products {
+  grid-area: products;
+}
